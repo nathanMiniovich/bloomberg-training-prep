@@ -2,7 +2,7 @@
 These are solutions to practice problems assigned to be completed before the start of a new Bloomberg training cycle on August 14th, 2017.
 They are from the book Thinking in C++, Volume 1
 
-__Reference Reading__
+__Reference Reading__  
 Thinking in C++, Volume 1, can be viewed at  
 http://www.mindviewinc.com/Books/downloads.html  
 
