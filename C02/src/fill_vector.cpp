@@ -10,7 +10,7 @@
 #include <vector>
 using namespace std;
 
-int main() {
+void FillVector() {
   vector<string> v;
   ifstream in("fill_vector.cpp");
   string line;

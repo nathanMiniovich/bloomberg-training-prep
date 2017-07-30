@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-int main(){
+void WordCounter(){
 	ifstream f("word_counter.cpp");
 	int wordcount = 0;
 	string word;
