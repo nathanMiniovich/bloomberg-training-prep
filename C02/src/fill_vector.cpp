@@ -8,15 +8,16 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "c02.h"
 using namespace std;
 
 void FillVector() {
   vector<string> v;
-  ifstream in("fill_vector.cpp");
+  ifstream in("src/fill_vector.cpp");
   string line;
   while(getline(in, line))
     v.push_back(line); // Add the line to the end
   // Add line numbers:
   for(int i = 0; i < v.size(); i++)
-    cout << i << ": " << v[i] << endl;
+    cout << v.size()-i-1 << ": " << v[v.size()-i-1] << endl;
 } ///:~

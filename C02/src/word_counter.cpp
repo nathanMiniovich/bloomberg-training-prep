@@ -1,10 +1,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "c02.h"
 using namespace std;
 
 void WordCounter(){
-	ifstream f("word_counter.cpp");
+	ifstream f("src/word_counter.cpp");
 	int wordcount = 0;
 	string word;
 
