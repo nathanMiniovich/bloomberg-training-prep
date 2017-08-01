@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     cout << "Excercise 4.17 result:" << endl;
-	DynamicStorage();
+    DynamicStorage();
     cout << endl << "Exercise 4.20 result:" << endl;
     StructSize();
     cout << endl;
