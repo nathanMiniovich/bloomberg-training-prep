@@ -1,17 +1,15 @@
-CC=g++
-objects = main.o word_counter.o fill_vector.o
+CXX      = g++
+CPPFLAGS = -Iinclude
+CXXSRC   = $(wildcard src/*.cpp)
+CXXOBJ   = $(patsubst src/%.cpp, %.o, $(CXXSRC))
 
-all: $(objects)
-	$(CC) $(objects) -o c02
+default: problem_set
 
-main.o:
-	$(CC) -Iinclude -c src/main.cpp
+problem_set: $(CXXOBJ)
+	$(CXX) $^ -o $@
 
-word_counter.o:
-	$(CC) -Iinclude -c src/word_counter.cpp
-
-fill_vector.o:
-	$(CC) -Iinclude -c src/fill_vector.cpp
+%.o: src/%.cpp
+	$(CXX) $(CPPFLAGS) -c -o $@ $^
 
 clean:
-	rm -f *.o c02
+	rm -f *.o problem_set

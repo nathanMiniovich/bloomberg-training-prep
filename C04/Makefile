@@ -1,14 +1,15 @@
-CC=g++
-objects = main.o dynamic_storage.o
+CXX      = g++
+CPPFLAGS = -Iinclude
+CXXSRC   = $(wildcard src/*.cpp)
+CXXOBJ   = $(patsubst src/%.cpp, %.o, $(CXXSRC))
 
-all: $(objects)
-	$(CC) $(objects) -o c04
+default: problem_set
 
-main.o:
-	$(CC) -Iinclude -c src/main.cpp
+problem_set: $(CXXOBJ)
+	$(CXX) $^ -o $@
 
-dynamic_storage.o:
-	$(CC) -Iinclude -c src/dynamic_storage.cpp
+%.o: src/%.cpp
+	$(CXX) $(CPPFLAGS) -c -o $@ $^
 
 clean:
-	rm -f *.o c04
+	rm -f *.o problem_set

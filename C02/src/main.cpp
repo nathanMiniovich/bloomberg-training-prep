@@ -7,4 +7,5 @@ int main(){
 	WordCounter();
 	cout << endl << "Exercise 2.5 result:" << endl;
 	FillVector();
+    cout << endl;
 }
