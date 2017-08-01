@@ -17,7 +17,7 @@ Chapter 12 : Ex 12.1
 Chapter 14 : Ex 14.3, Ex 14.14  
 Chapter 15 : Ex 15.1, Ex 15.2, Ex 15.3  
 
-__Compilation and Testing__
+__Compilation and Testing__ 
 For convenience I have included a bash script (alltest.sh) which for every chapter compiles an executable, runs it, and then cleans the
 directory. Feel free to pipe the output of the script to a file for easy reading/grading of output. If you would like the compile each
 chapter individually you can use the following commands:
@@ -28,6 +28,6 @@ chapter individually you can use the following commands:
     Remove the executable and object files
         make clean
 
-__Extra Notes__
+__Extra Notes__ 
 Since I have an extreme hatred of nondescriptive file names, information about which source file corresponds to which problem can be found
 in the _filename-problem-mapping.txt_ for each chapter.
