@@ -13,7 +13,7 @@ test C04
 test C06
 test C07
 test C09
-#test C11
+test C11
 #test C12
 #test C14
 #test C15
