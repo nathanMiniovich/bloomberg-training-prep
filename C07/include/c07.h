@@ -2,5 +2,6 @@
 #define C07_H
 
 void TextTest();
+void MembersTest();
 
 #endif
