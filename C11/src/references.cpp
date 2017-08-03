@@ -14,5 +14,5 @@ void References(){
    cout << "Value after change: " << ref << ", Address of reference: " << &ref << endl;
    cout << "The reference wasn't actually reassigned, the value that it points to was just updated!" << endl;
 
-   cout << "You can't have a NULL reference" << endl;
+   cout << "You can't initialize a NULL reference" << endl;
 }
